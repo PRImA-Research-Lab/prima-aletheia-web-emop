@@ -37,7 +37,7 @@
     <init-param>
       <description>Database connection URL</description>
       <param-name>DATABASE_URL</param-name>
-      <param-value>jdbc:mysql://www.prima.cse.salford.ac.uk/webaletheia</param-value>
+      <param-value>jdbc:mysql://www.your-database</param-value>
     </init-param>
     <init-param>
       <description>Database driver class</description>
@@ -62,12 +62,12 @@
     <init-param>
       <description>Static secret key for decryption (if not to be retrieved from database)</description>
       <param-name>STATIC_SECRET_KEY</param-name>
-      <param-value>CA8BC51AD641ADFAC55124FB3E000000</param-value>
+      <param-value>Your-secret-key</param-value>
     </init-param>
     <init-param>
       <description>Static SOAP service URL (if not to be retrieved from database)</description>
       <param-name>STATIC_SOAP_URL</param-name>
-      <param-value>http://www.prima.cse.salford.ac.uk/emop-dataset/soap/soap.php</param-value>
+      <param-value>http://your-web-server/soap.php</param-value>
     </init-param>
     
   </servlet>
