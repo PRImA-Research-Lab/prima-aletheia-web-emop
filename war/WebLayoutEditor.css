@@ -1,0 +1,295 @@
+/** Add css rules here for your application. */
+
+@font-face {
+font-family: aletheiaSans;
+src: url('aletheiasans-webfont.eot');
+src: url('aletheiasans-webfont.eot?#iefix') format('embedded-opentype'), 
+url('aletheiasans-webfont.woff') format('woff'), 
+url('aletheiasans-webfont.ttf') format('truetype'), 
+url('aletheiasans-webfont.svg#DejaVuSansBook') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #777777;
+  margin: 20px 0px 0px;
+  text-align: center;
+}
+
+/* Document page view */
+.pageView {
+}
+
+.pageViewPanel {
+}
+
+.pageViewCanvas {
+	box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.2);
+}
+
+.pageViewHoverToolbar {
+	background-color: silver;
+	border:1px solid gray;
+	box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+	padding: 2px;
+	background: silver url('img/greyBackground.png') repeat-x;
+}
+
+.pageViewHoverToolbar .gwt-PushButton,
+.pageViewHoverToolbar .gwt-ToggleButton {
+	margin: 1px;
+	outline: 0;
+}
+
+
+.pageViewHoverToolbar .gwt-PushButton-up, 
+.pageViewHoverToolbar .gwt-PushButton-up-disabled,
+.pageViewHoverToolbar .gwt-ToggleButton-up, 
+.pageViewHoverToolbar .gwt-ToggleButton-up-disabled {
+	background: transparent;
+	border-color: transparent;
+}
+
+.pageViewHoverToolbar .gwt-PushButton-up,
+.pageViewHoverToolbar .gwt-PushButton-up-hovering,
+.pageViewHoverToolbar .gwt-PushButton-up-disabled,
+.pageViewHoverToolbar .gwt-ToggleButton-up,
+.pageViewHoverToolbar .gwt-ToggleButton-up-hovering,
+.pageViewHoverToolbar .gwt-ToggleButton-up-disabled  {
+  padding: 1px 1px 1px 1px;
+}
+
+.pageViewHoverToolbar .gwt-PushButton-down,
+.pageViewHoverToolbar .gwt-PushButton-down-hovering,
+.pageViewHoverToolbar .gwt-PushButton-down-disabled,
+.pageViewHoverToolbar .gwt-ToggleButton-down,
+.pageViewHoverToolbar .gwt-ToggleButton-down-hovering,
+.pageViewHoverToolbar .gwt-ToggleButton-down-disabled {
+  padding: 2px 0px 0px 2px;
+}
+
+.headerPanel {
+	width: 99.8%;
+	text-align: center;
+}
+
+.documentTitle {
+	font-size: 1.5em;
+	color: #004979;
+}
+
+.contentPanel {
+  margin: 5px 0px 10px 0px;
+  border: 1px solid silver;
+}
+
+.toolbarPanel {
+	width: 100%;
+}
+
+.paddedHorizontalPanel {
+}
+
+.paddedVerticalPanel {
+}
+
+/* Toolbar buttons */
+.paddedVerticalPanel .gwt-Button {
+  width: 4.1em;
+  margin-bottom: 5px;
+}
+
+
+.paddedVerticalPanel .gwt-PushButton {
+	margin: 1px 1px 5px 1px;
+	outline: 0;
+}
+
+.paddedVerticalPanel .gwt-PushButton-up-hovering {
+  background: transparent;
+  padding: 0px 1px 1px 1px;
+}
+
+.paddedVerticalPanel .gwt-PushButton-down-hovering {
+  background: transparent;
+  padding: 1px 0px 0px 2px;
+}
+	
+
+.paddedVerticalPanel .gwt-PushButton-up,
+.paddedVerticalPanel .gwt-PushButton-up-disabled {
+  background: transparent;
+  border-color: transparent;
+  padding: 0px 1px 1px 1px;
+}
+
+.paddedVerticalPanel .gwt-PushButton-down,
+.paddedVerticalPanel .gwt-PushButton-down-disabled {
+  background: transparent;
+  border-color: transparent;
+  padding: 1px 0px 0px 2px;
+}
+
+
+/* Toolbar label */
+.paddedVerticalPanel .gwt-Label {
+	padding-left:auto;
+	padding-right:auto;
+  	margin-top: 15px;
+  	margin-bottom: 5px;
+  	font-size: 1.0em;
+  	background-color: #f8f8ff;
+}
+
+.pageContent_TextRegion {
+	color: rgba(0,0,255,0.2);
+}
+
+.textContentView {
+	padding: 3px;
+	border: 0px;
+	width: 100%;
+	height: 100%;
+	resize: none;
+}
+
+.mainPanel .gwt-TextArea-readonly{
+	color: black;
+}
+
+.TextContentView {
+	width: 27em;
+	height: 14em;
+}
+
+.virtualKeyboard {
+	margin: 5px 2px 10px 0px;
+	border: 1px solid silver;
+	background-color: #f5f5f5;
+	width: 27em;
+	height: 4em;
+}
+
+.virtualKeyboardSelector {
+	width:50px;
+	margin: 2px 0px 0px 2px;
+}
+
+.virtualKeyPanel {
+	margin: 5px 0px 0px 0px;
+	overflow-y:scroll;
+}
+
+.virtualKeyPanel .gwt-Button {
+	width: 2em;
+	height: 2em;
+	font-size:1.5em;
+	margin: 0px 0px 2px 2px;
+}
+
+.simpleRegionTypeEditorCell {
+	padding: 5px;
+}
+
+.simpleRegionTypeEditorCell-disabled {
+	padding: 5px;
+	color: #F5F5F5;
+}
+
+.regionLabelSeparator {
+	margin-bottom: 20px;
+}
+
+.regionTypeEditorHeading {
+	margin-left:auto;
+    margin-right:auto;
+	font-size: 130%;
+	color: #004979;
+	background-color: #f8f8ff;
+	text-align: center;
+	padding: 2px;
+}
+
+.contentTypePanel {
+	margin-right: 5px;
+	border: 1px solid #C0C0C0; 
+	padding: 4px;
+}
+/* Content type toggle buttons*/
+
+.contentTypePanel .gwt-ToggleButton-up {
+	background: white;
+	border: 0px;
+	border-radius: 0px;
+	outline-width: 0px;
+}
+.contentTypePanel .gwt-ToggleButton-down {
+	background: #ffdead;
+	border: 0px;
+	border-radius: 0px;
+	outline-width: 0px;
+}
+.contentTypePanel .gwt-ToggleButton-up-hovering {
+	background: #ffa500;
+	border: 0px;
+	border-radius: 0px;
+	outline-width: 0px;
+}
+.contentTypePanel .gwt-ToggleButton-down-hovering {
+	background: #ffdead;
+	border: 0px;
+	border-radius: 0px;
+	outline-width: 0px;
+}
+
+.errorMessageBox {
+	margin-left:100px;
+	margin-top:10px;
+}
+
+#errorMessageBoxDialog .dialogMiddleCenter {
+  padding: 1px;
+  background-color: #ffe4e1;
+}
+
+.errorMessagePanel {
+	padding: 1px;
+	background-color: #ffe4e1; 
+}
+
+.errorMessagePanel .gwt-PushButton {
+	margin: 1px 1px 1px 1px;
+	outline: 0;
+}
+
+.errorMessagePanel .gwt-PushButton-up-hovering {
+  background: transparent;
+  padding: 0px 1px 1px 1px;
+}
+
+.errorMessagePanel .gwt-PushButton-down-hovering {
+  background: transparent;
+  padding: 1px 0px 0px 2px;
+}
+	
+
+.errorMessagePanel .gwt-PushButton-up,
+.errorMessagePanel .gwt-PushButton-up-disabled {
+  background: transparent;
+  border-color: transparent;
+  padding: 0px 1px 1px 1px;
+}
+
+.errorMessagePanel .gwt-PushButton-down,
+.errorMessagePanel .gwt-PushButton-down-disabled {
+  background: transparent;
+  border-color: transparent;
+  padding: 1px 0px 0px 2px;
+}
+
+
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>documentPageSyncServiceImpl</servlet-name>
+    <servlet-class>org.primaresearch.web.gwt.server.DocumentPageSyncServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>documentPageSyncServiceImpl</servlet-name>
+    <url-pattern>/weblayouteditor/documentPageSync</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>loggingServiceImpl</servlet-name>
+    <servlet-class>org.primaresearch.web.gwt.server.LoggingServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>loggingServiceImpl</servlet-name>
+    <url-pattern>/weblayouteditor/loggingService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>userServiceImpl</servlet-name>
+    <servlet-class>org.primaresearch.web.gwt.server.UserServiceImpl</servlet-class>
+    <init-param>
+      <description>Mode for extended debug output</description>
+      <param-name>DEBUG_MODE</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <description>Database connection URL</description>
+      <param-name>DATABASE_URL</param-name>
+      <param-value>jdbc:mysql://www.prima.cse.salford.ac.uk/webaletheia</param-value>
+    </init-param>
+    <init-param>
+      <description>Database driver class</description>
+      <param-name>DATABASE_CLASS</param-name>
+      <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+      <description>Database user name</description>
+      <param-name>DATABASE_USER</param-name>
+      <param-value></param-value>
+    </init-param>
+    <init-param>
+      <description>Database pass</description>
+      <param-name>DATABASE_PASS</param-name>
+      <param-value></param-value>
+    </init-param>
+    <init-param>
+      <description>Character encoding used for encryption/decryption</description>
+      <param-name>ENCRYPTION_CHAR_ENCODING</param-name>
+      <param-value>ISO-8859-1</param-value>
+    </init-param>
+    <init-param>
+      <description>Static secret key for decryption (if not to be retrieved from database)</description>
+      <param-name>STATIC_SECRET_KEY</param-name>
+      <param-value>CA8BC51AD641ADFAC55124FB3E000000</param-value>
+    </init-param>
+    <init-param>
+      <description>Static SOAP service URL (if not to be retrieved from database)</description>
+      <param-name>STATIC_SOAP_URL</param-name>
+      <param-value>http://www.prima.cse.salford.ac.uk/emop-dataset/soap/soap.php</param-value>
+    </init-param>
+    
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>userServiceImpl</servlet-name>
+    <url-pattern>/weblayouteditor/user</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>variableMapSyncServiceImpl</servlet-name>
+    <servlet-class>org.primaresearch.web.gwt.server.VariableMapSyncServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>variableMapSyncServiceImpl</servlet-name>
+    <url-pattern>/weblayouteditor/variableMapSync</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>WebLayoutEditor.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
